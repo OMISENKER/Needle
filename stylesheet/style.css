@@ -23,6 +23,12 @@ body {
     opacity:calc(30);
 }
 
+#loginDiv h1, h2, form{
+    position: relative;
+    text-align: center;
+    top: 5%;
+}
+
 
 
 
