@@ -9,8 +9,15 @@ body {
     background-size: cover;
 }
 
+.omidev-logo{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+
+}
+
 #loginDiv{
-    background-color: rgba(0, 200, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     float: right;
     height: 75vh;
     width: 25vw;
@@ -23,10 +30,31 @@ body {
     opacity:calc(30);
 }
 
-#loginDiv h1, h2, form{
+#loginDiv h1{
+    font-family: 'Roboto', serif;
     position: relative;
     text-align: center;
-    top: 5%;
+    top: 3%;
+}
+
+#loginDiv h2{
+    font-size: 10px;
+    font-family: 'Roboto', serif;
+    position: relative;
+    text-align: center;
+    top: 2%;
+}
+
+#loginDiv form{
+    font-family: 'Roboto', serif;
+    position: relative;
+    text-align: center;
+    top: 3%;
+}
+
+#loginDiv form{
+    justify-items:center; 
+    align-items:center;
 }
 
 
