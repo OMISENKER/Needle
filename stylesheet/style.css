@@ -50,6 +50,7 @@ body {
 }
 
 #loginDiv h1{
+
     font-family: 'Roboto', serif;
     position: relative;
     text-align: center;
@@ -57,7 +58,7 @@ body {
 }
 
 #loginDiv h2{
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Roboto', serif;
     position: relative;
     text-align: center;
@@ -66,6 +67,7 @@ body {
 
 #loginDiv form{
     font-family: 'Roboto', serif;
+    font-size: 15px;
     position: relative;
     text-align: left;
     margin-left: 10%;
@@ -93,12 +95,43 @@ body {
 }
 
 .signin-btn{
-    height: 50px;
-    width: 100px;
-    background-color: blue;
-    border: 0.1px;
-    border-radius: 15px;
+    height: 35px;
+    width: 80px;
+    background: #625DA9;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
+
+#loginDiv hr{
+    width: 85%;
+}
+
+#loginDiv p{
+    font-family: 'Roboto', serif ;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+#loginDiv button img{
+    height: 50px;
+    width: 50px;
+}
+
+#loginDiv button{
+    position: relative;
+    left: 50%;
+    transform: translate(-150%, -40%);
+    margin-right: 50px;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 
 
 
