@@ -158,9 +158,14 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .omidev-logo{
+        height: 50px;
+        width: 100px;
+    }
+
     #loginDiv{
         background-color: rgb(255, 255, 255);
-        height: 70svh;
+        height: auto;
         width: 70vw;
     
         position: absolute;
@@ -168,7 +173,6 @@ body {
         top: 12vh;
         border-radius: 5%;
 
-        overflow-wrap: break-word;
     }
 }
 
@@ -177,16 +181,16 @@ body {
 
     #loginDiv{
         background-color: rgb(255, 255, 255);
-        height: 60svh;
+        height: auto;
         width: 50vw;
     
         position: absolute;
         align-content: center;
+        left: 50%;
+        transform: translateX(-50%);
         top: 12vh;
         border-radius: 5%;
 
-        overflow: auto;
-    
     }    
 
 }
@@ -199,15 +203,10 @@ body {
         width: 45vw;
     
         position: absolute;
-        margin: 0;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -0%);
+        align-content: center;
+        top: 10svh;
         border-radius: 5%;
 
-        word-wrap: break-word;
-        
-    
     }
 }
 
@@ -215,15 +214,14 @@ body {
 @media only screen and (min-width: 992px) {
     #loginDiv{
         background-color: rgb(255, 255, 255);
-        height: 75vh;
-        width: 50vw;
+        height: auto;
+        width: 40vw;
     
         position: absolute;
         align-content: center;
         top: 10vh;
         border-radius: 5%;
         
-        overflow: hidden;
     }
 }
 
@@ -232,7 +230,7 @@ body {
     #loginDiv{
         background-color: rgb(255, 255, 255);
         float: right;
-        height: 75vh;
+        height: auto;
         width: 35vw;
     
         position: absolute;
@@ -240,6 +238,5 @@ body {
         right: 15vw;
         border-radius: 5%;
     
-        overflow-wrap: break-word;
     }
 }
