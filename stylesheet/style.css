@@ -3,21 +3,40 @@
   }
 
 body {
-    background-image: url('../resources/background-login.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #DE47BD;
+    height: 100%;
+    width: 100%;
 }
 
 .omidev-logo{
-    height: 50px;
-    width: 100px;
+    height: 75px;
+    width: 120px;
     position: absolute;
+    z-index: 1;
+}
 
+.asset1{
+    position: fixed;
+    width: 2000px;
+    height: 500px;
+    left: -79px;
+    top: -158px;
+    transform: translate(-9%, -25%);
+}
+
+.asset2{
+    position: fixed;
+    width: 3015px;
+    height: 585px;
+    left: -358px;
+    top: 540px;
+    transform: translate(-15%, -50%);
 }
 
 #loginDiv{
     background-color: rgb(255, 255, 255);
+    border: 1px solid #47A8DE;
+    box-shadow: 0px 4px 250px rgba(0, 0, 0, 0.50);
     float: right;
     height: auto;
     width: 25vw;
@@ -53,17 +72,32 @@ body {
     top: 3%;
 }
 
-#loginDiv form input{
+.username-txt{
     top: 20px;
     border-radius: 5px;
+    border: 1px solid gray;
+    background: #D9D9D9;
     height: 30px;
     width: 90%;
     margin-bottom: 20px;
 }
 
-#loginDiv form{
-    justify-items:center; 
-    align-items:center;
+.password-txt{
+    top: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: #D9D9D9;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.signin-btn{
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    border: 0.1px;
+    border-radius: 15px;
 }
 
 
@@ -93,7 +127,7 @@ body {
 @media only screen and (max-width: 600px) {
     #loginDiv{
         background-color: rgb(255, 255, 255);
-        height: 50vh;
+        height: 70svh;
         width: 70vw;
     
         position: absolute;
@@ -110,7 +144,7 @@ body {
 
     #loginDiv{
         background-color: rgb(255, 255, 255);
-        height: 30vh;
+        height: 60svh;
         width: 50vw;
     
         position: absolute;
@@ -127,7 +161,7 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #loginDiv{
-        background-color: rgb(184, 96, 96);
+        background-color: rgb(255, 255, 255);
         height: auto;
         width: 45vw;
     
