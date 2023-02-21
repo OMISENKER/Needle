@@ -19,7 +19,7 @@ body {
 #loginDiv{
     background-color: rgb(255, 255, 255);
     float: right;
-    height: 75vh;
+    height: auto;
     width: 25vw;
 
     position: absolute;
@@ -27,7 +27,7 @@ body {
     right: 15vw;
     border-radius: 5%;
 
-    opacity:calc(30);
+    overflow-wrap: break-word;
 }
 
 #loginDiv h1{
@@ -48,8 +48,17 @@ body {
 #loginDiv form{
     font-family: 'Roboto', serif;
     position: relative;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
     top: 3%;
+}
+
+#loginDiv form input{
+    top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 #loginDiv form{
@@ -82,25 +91,88 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    #loginDiv{
+        background-color: rgb(255, 255, 255);
+        height: 50vh;
+        width: 70vw;
+    
+        position: absolute;
+        align-content: center;
+        top: 12vh;
+        border-radius: 5%;
 
+        overflow-wrap: break-word;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+    #loginDiv{
+        background-color: rgb(255, 255, 255);
+        height: 30vh;
+        width: 50vw;
+    
+        position: absolute;
+        align-content: center;
+        top: 12vh;
+        border-radius: 5%;
+
+        overflow: auto;
+    
+    }    
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    #loginDiv{
+        background-color: rgb(184, 96, 96);
+        height: auto;
+        width: 45vw;
+    
+        position: absolute;
+        margin: 0;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        border-radius: 5%;
 
+        word-wrap: break-word;
+        
+    
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    #loginDiv{
+        background-color: rgb(255, 255, 255);
+        height: 75vh;
+        width: 50vw;
+    
+        position: absolute;
+        align-content: center;
+        top: 10vh;
+        border-radius: 5%;
+        
+        overflow: hidden;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    #loginDiv{
+        background-color: rgb(255, 255, 255);
+        float: right;
+        height: 75vh;
+        width: 35vw;
+    
+        position: absolute;
+        top: 10vh;
+        right: 15vw;
+        border-radius: 5%;
+    
+        overflow-wrap: break-word;
+    }
 }
