@@ -15,21 +15,23 @@ body {
     z-index: 1;
 }
 
-.asset1{
+#asset1{
     position: fixed;
     width: 2000px;
     height: 500px;
     left: -79px;
     top: -158px;
+    transition: 3s ease-out;
     transform: translate(-9%, -25%);
 }
 
-.asset2{
+#asset2{
     position: fixed;
     width: 3015px;
     height: 585px;
     left: -358px;
     top: 540px;
+    transition: 2s ease-out;
     transform: translate(-15%, -50%);
 }
 
@@ -46,7 +48,7 @@ body {
     right: 15vw;
     border-radius: 5%;
 
-    overflow-wrap: break-word;
+    transition: all 5s ease-in-out;
 }
 
 #loginDiv h1{

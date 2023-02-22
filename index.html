@@ -7,12 +7,13 @@
     <title>Needle</title>
     <link rel="stylesheet" href="stylesheet/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <img src="resources/omidev-logo.svg" alt="OMI DEV" class="omidev-logo">
 
-    <img src="resources/Asset-1.svg" alt="" class="asset1">
-    <img src="resources/Asset-1.svg" alt="" class="asset2">
+    <img src="resources/Asset-1.svg" alt="" id="asset1">
+    <img src="resources/Asset-1.svg" alt="" id="asset2">
 
     <div id="loginDiv">
         <h1>Sign in</h1>
@@ -24,7 +25,7 @@
             <label for="lname">Password:</label>
             <br>
             <input type="password" id="lname" name="lname" class="password-txt"><br>
-            <input type="submit" value="Sign In" class="signin-btn">
+            <input type="submit" value="Sign In" class="signin-btn" id="sign-in" onclick="otpOpen()">
           </form>
           <br>
           <hr>
