@@ -20,4 +20,22 @@ function otpOpen(){
     setTimeout(showOTPOpacity, 1500);
     setTimeout(showOTP, 500);
 
+    let count=300;
+
+    let counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+    
+    function timer()
+    {
+      count=count-1;
+      if (count <= 0)
+      {
+         clearInterval(counter);
+         document.getElementById("timer").innerHTML="Resend code";
+         return;
+      }
+    
+      document.getElementById("timer").innerHTML="Resend code in " + count + "s";
+    }
+
 };
+

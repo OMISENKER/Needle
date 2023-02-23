@@ -21,10 +21,10 @@
         <form action="#">
             <label for="fname">Username or Email:</label>
             <br>
-            <input type="text" id="fname" name="fname" class="username-txt"><br>
+            <input type="text" id="fname" name="fname" class="username-txt" required><br>
             <label for="lname">Password:</label>
             <br>
-            <input type="password" id="lname" name="lname" class="password-txt"><br>
+            <input type="password" id="lname" name="lname" class="password-txt" required><br>
             <input type="submit" value="Sign In" class="signin-btn" id="sign-in" onclick="otpOpen()">
           </form>
           <br>
@@ -45,7 +45,7 @@
             <input type="submit" value="Enter" class="otp-btn" id="otp-enter-btn">
           </form>
           <br>
-          <a href="">Resend in 299s</a>
+          <a href="" id="timer"></a>
           <br>
           <br>
           <br>
