@@ -1,0 +1,208 @@
+
+#overlayed-side-slide-bar-1 h2{
+    width: 11vw;
+    position: fixed;
+    padding: 12px 1px 12px 20px;
+    margin-left: -32vw;
+    margin-top: 0px;
+    left: 32vw;
+    background-color: #85AEFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    border-radius: 0px 50px 50px 0px;
+    z-index: 3;
+}
+
+#overlayed-side-slide-bar-1{
+    width: 25vw;
+    height: 95vh;
+    background-color: #85AEFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    top:2vh;
+    bottom: 0vw;
+    margin-left: -25vw;
+    position: fixed;
+    z-index: 3;
+}
+
+#overlayed-side-slide-bar-2 h3{
+    width: 10vw;
+    position: fixed;
+    padding: 12px 0px 12px 20px;
+    margin-left: -32vw;
+    margin-top: 10vh;
+    left: 32vw;
+    background-color: #49ECD8;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    border-radius: 0px 50px 50px 0px;
+    z-index: 2;
+}
+
+#overlayed-side-slide-bar-2{
+    width: 25vw;
+    height: 95vh;
+    background-color: #49ECD8;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    top:2vh;
+    bottom: 0vw;
+    margin-left: -25vw;
+    position: fixed;
+    z-index: 2;
+}
+
+#overlayed-side-slide-bar-3 h3{
+    width: 10vw;
+    position: fixed;
+    padding: 12px 0px 12px 20px;
+    margin-left: -32vw;
+    margin-top: 19vh;
+    left: 32vw;
+    background-color:#BEBBE3;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    border-radius: 0px 50px 50px 0px;
+    z-index: 2;
+}
+
+#overlayed-side-slide-bar-3{
+    width: 25vw;
+    height: 95vh;
+    background-color:#BEBBE3;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: default;
+    top:2vh;
+    bottom: 0vw;
+    margin-left: -25vw;
+    position: fixed;
+    z-index: 2;
+}
+
+#overlayed-side-slide-bar-1:hover, #title-1:hover,
+#overlayed-side-slide-bar-2:hover, #title-2:hover,
+#overlayed-side-slide-bar-3:hover, #title-3:hover{
+    z-index: 6 !important; 
+    transition-duration: 0s;
+}
+
+#collapse{
+    z-index: 7;
+    font-size: 30px;
+    height: 35px;
+    width: 35px;
+    line-height: 100px;
+    cursor: default;
+    position:fixed;
+    top: -3vh;
+    display: none;
+}
+
+#collapse:hover{
+    color: rgb(255, 255, 255);
+}
+
+.sidebar-contents{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    position: absolute;
+    margin: auto;
+    margin-left: 2vw;
+    text-align: left;
+    top: 5vw;
+    padding-top: 1vw;
+}
+
+.sidebar-contents li{
+    padding-top: 2vh;
+}
+
+.sidebar-contents li:hover{
+    color: rgb(255, 255, 255);
+}
+
+.home{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    top: 4%;
+    left: 33%;
+    background-color: rgb(239, 239, 203);
+    border-radius: 50px;
+    transition: 1.5s;
+}
+
+.home h1{
+    text-align: center;
+    padding: 5px 20px;
+    font-weight: 100;
+
+}
+
+.home h2 , h3{
+    text-align: left;
+    padding: 0px 25px;
+    font-weight: 100;
+}
+
+.faq{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    top: 4%;
+    left: 33%;
+    background-color: rgb(239, 239, 203);
+    border-radius: 50px;
+    margin-top: -100%;
+    transition: 1.5s;
+
+}
+
+.faq p{
+    text-align: left;
+    padding: 5px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.faq p:first-child{
+    margin-top: 50px;
+}
+
+.about{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    top: 4%;
+    left: 33%;
+    background-color: rgb(239, 239, 203);
+    border-radius: 50px;
+    margin-top: -100%;
+    transition: 1.5s;
+
+}
+
+.about p{
+    text-align: left;
+    padding: 5px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.about p:first-child{
+    margin-top: 50px;
+}
+
