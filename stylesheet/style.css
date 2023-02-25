@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 
-body {
+#Login-ui {
     background-color: #DE47BD;
     height: 100%;
     width: 100%;
@@ -223,7 +223,9 @@ body {
 
 /*home-dashboard styles*/
 
-
+#Dashboard-ui{
+    background-color: #F5E3F1;
+}
 
 
 
