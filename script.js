@@ -39,3 +39,18 @@ function otpOpen(){
 
 };
 
+//navbar
+function showNavBar(){
+    let navbar_width = document.getElementById("nav-sidebar").style.left;
+    if(navbar_width == "0px"){
+        document.getElementById("nav-sidebar").style.left = "-250px";
+        document.getElementById("navbar-btn").style.left ="0px";
+        document.getElementById("navbar-btn").style.transition ="all .7s ease";
+    }else{
+        document.getElementById("nav-sidebar").style.left = "0";
+        document.getElementById("navbar-btn").style.left ="250px";
+        document.getElementById("navbar-btn").style.transition ="all .9s ease";
+
+    }
+}
+

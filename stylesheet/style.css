@@ -230,6 +230,35 @@
     background-color: #F5E3F1;
 }
 
+#navbar-btn{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #625DA9;
+    padding: 10px 20px 10px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .9s ease;
+}
+
+#nav-sidebar{
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100svh;
+    background-color: #625DA9;
+    transition: all .8s ease;
+}
+
+.needle-logo{
+    position: absolute;
+    height: 50px;
+    width: 160px;
+}
+
 
 
 
