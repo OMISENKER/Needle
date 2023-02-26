@@ -259,6 +259,41 @@
     width: 160px;
 }
 
+.sidebar-links{
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0px 10px 20px;
+    font-family: 'Roboto', serif;
+}
+
+#nav-sidebar :nth-child(2){
+    margin-top: 70px;
+}
+
+.sidebar-main-links{
+    font-size: 30px;
+}
+
+.dashboard-timelines{
+    margin-left: 40px;
+}
+
+#nav-sidebar :nth-child(9){
+    margin-top: 30px;
+
+}
+
+#nav-sidebar :nth-child(10){
+    position: relative;
+    top: 20px;
+}
+
+.sidebar-links:hover{
+    color: rgb(208, 208, 208);
+}
 
 
 
@@ -301,6 +336,11 @@
         border-radius: 5%;
 
     }
+
+    #nav-sidebar{
+        overflow-y: scroll;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
