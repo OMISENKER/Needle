@@ -3,7 +3,7 @@
   }
 
 #Login-ui {
-    background-color: #DE47BD;
+    background-color: #00bef8;
     height: 100%;
     width: 100%;
 }
@@ -207,17 +207,20 @@
 }
 
 .otp-btn{
-    height: 35px;
-    width: 80px;
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 60px;
     background: #625DA9;
     border: 0.5px solid gray;
     border-radius: 10px;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-#otpDiv a{
+#timer{
     padding-bottom: 50px;
 }
 
