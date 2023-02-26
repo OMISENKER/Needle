@@ -338,8 +338,14 @@ html{
     left: 5%;
     height: 80%;
     width: 90%;
+    align-items: center;
 }
 
+#myChart{
+    position: relative;
+    height: 790px;
+    width: 89%;
+}
 
 
 
