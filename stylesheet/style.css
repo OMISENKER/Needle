@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+html{
+    background-color: #F5E3F1;
+
+}
+
 #Login-ui {
     background-color: #00bef8;
     height: 100%;
@@ -227,20 +232,25 @@
 /*home-dashboard styles*/
 
 #Dashboard-ui{
+    margin: 0;
+    padding: 0;
     background-color: #F5E3F1;
 }
 
+/*Side Navigational Bar Design*/
+
 #navbar-btn{
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 0;
-    background-color: #625DA9;
+    background-color: #E28FD0;
     padding: 10px 20px 10px 20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 20px;
     cursor: pointer;
     transition: all .9s ease;
+    z-index: 2;
 }
 
 #nav-sidebar{
@@ -249,8 +259,9 @@
     left: -250px;
     width: 250px;
     height: 100svh;
-    background-color: #625DA9;
+    background-color: #E28FD0;
     transition: all .8s ease;
+    z-index: 2;
 }
 
 .needle-logo{
@@ -295,6 +306,67 @@
     color: rgb(208, 208, 208);
 }
 
+/*Dashboard Body*/
+#dashboard-body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #F5E3F1;
+    transition: all .9s ease;
+}
+
+#dashboard-body h1{
+    position: relative;
+    height: auto;
+    width: 100px;
+    font-family: 'Roboto', serif;
+    font-size: 2rem;
+    left: 8%;
+}
+
+#dashboard-body hr{
+    height: 1px;
+    width: 90%;
+    background-color: #DE47BD;
+    border: none;
+}
+
+#facebook-section{
+    position: relative;
+    background-color: #FFFFFF;
+    top: 1%;
+    left: 5%;
+    height: 80%;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Additional Styles*/
+::-webkit-scrollbar {
+    width: 1px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 
@@ -317,6 +389,12 @@
 
 
 
+/*For landscaped phone*/
+@media screen and (max-height: 510px){
+    #nav-sidebar{
+        overflow-y: scroll;
+    }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -337,10 +415,6 @@
 
     }
 
-    #nav-sidebar{
-        overflow-y: scroll;
-    }
-    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -358,7 +432,7 @@
         top: 12vh;
         border-radius: 5%;
 
-    }    
+    }
 
 }
 
@@ -375,6 +449,7 @@
         border-radius: 5%;
 
     }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

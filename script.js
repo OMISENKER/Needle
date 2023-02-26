@@ -41,16 +41,22 @@ function otpOpen(){
 
 //navbar
 function showNavBar(){
-    let navbar_width = document.getElementById("nav-sidebar").style.left;
-    if(navbar_width == "0px"){
+    let navbar_left = document.getElementById("nav-sidebar").style.left;
+
+    if(navbar_left == "0px"){
         document.getElementById("nav-sidebar").style.left = "-250px";
         document.getElementById("navbar-btn").style.left ="0px";
         document.getElementById("navbar-btn").style.transition ="all .7s ease";
+        document.getElementById("dashboard-body").style.transition ="all .9s ease";
+        document.getElementById("dashboard-body").style.width = "100%";
+        document.getElementById("dashboard-body").style.left ="0px";
     }else{
         document.getElementById("nav-sidebar").style.left = "0";
         document.getElementById("navbar-btn").style.left ="250px";
         document.getElementById("navbar-btn").style.transition ="all .9s ease";
-
+        document.getElementById("dashboard-body").style.left ="250px";
+        document.getElementById("dashboard-body").style.width = "calc(100% - 250px)";
+        document.getElementById("dashboard-body").style.transition ="all .9s ease";
     }
 }
 
