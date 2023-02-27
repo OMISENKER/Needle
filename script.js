@@ -60,6 +60,8 @@ function showNavBar(){
     }
 }
 
+//chart
+
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -68,8 +70,8 @@ data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
     label: '# of Votes',
-    data: [102, 19, 3, 5, 2, 3],
-    borderWidth: 1
+    data: [10, 19, 3, 5, 2, 3],
+    borderWidth: 3
     }]
 },
 options: {

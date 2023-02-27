@@ -339,12 +339,16 @@ html{
     height: 80%;
     width: 90%;
     align-items: center;
+    transition: all .5s ease;
 }
 
 #myChart{
     position: relative;
-    height: 790px;
-    width: 89%;
+}
+
+.chart-container{
+    position: relative;
+    height: 250px;
 }
 
 
