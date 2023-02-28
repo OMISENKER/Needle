@@ -342,14 +342,16 @@ html{
     transition: all .5s ease;
 }
 
+.chart-container{
+    position: absolute;
+    height: 30%;
+}
+
 #myChart{
     position: relative;
 }
 
-.chart-container{
-    position: relative;
-    height: 250px;
-}
+
 
 
 
