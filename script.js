@@ -67,14 +67,37 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
 type: 'bar',
 data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
     datasets: [{
-    label: '# of Votes',
-    data: [10, 19, 3, 5, 2, 3],
+    label: 'Reach',
+    data: [15684, 8684, 5468, 3896, 6577, 12684, 14486],
     borderWidth: 3
     }]
 },
 options: {
+    maintainAspectRatio: false,
+    scales: {
+    y: {
+        beginAtZero: true
+    }
+    }
+}
+});
+
+const ctx2 = document.getElementById('mySecondChart');
+
+new Chart(ctx2, {
+type: 'bar',
+data: {
+    labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
+    datasets: [{
+    label: 'Engagement',
+    data: [15684, 8684, 5468, 3896, 6577, 12684, 14486],
+    borderWidth: 3
+    }]
+},
+options: {
+    maintainAspectRatio: false,
     scales: {
     y: {
         beginAtZero: true

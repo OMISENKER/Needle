@@ -333,6 +333,7 @@ html{
 
 #facebook-section{
     position: relative;
+    display: flex;
     background-color: #FFFFFF;
     top: 1%;
     left: 5%;
@@ -343,13 +344,23 @@ html{
 }
 
 .chart-container{
-    position: absolute;
-    height: 30%;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 35%;
+    height: 50%;
 }
 
-#myChart{
+.chart-container-2{
     position: relative;
+    top: 40px;
+    left: 40px;
+    width: 35%;
+    height: 50%;
 }
+
+
+
 
 
 
