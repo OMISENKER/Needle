@@ -62,16 +62,18 @@ function showNavBar(){
 
 //chart
 
-//variables for control
+//variables for chart type
 let reachChartType = 'pie';
 let engagementChartType = 'bar';
+let retentionChartType = 'line';
+let monetizationChartType = 'donut';
 
-//function to change bar type
-//changeReachBarType(){
-  //  const reachChart
-//}
+//function to change chart type
 
-const reachChart = document.getElementById('myChart');
+
+//Displaying Charts
+//--Reach Chart
+const reachChart = document.getElementById('reach-chart');
 
 new Chart(reachChart, {
 type: reachChartType,
@@ -93,7 +95,8 @@ options: {
 }
 });
 
-const engagementChart = document.getElementById('mySecondChart');
+//--Engagement Chart
+const engagementChart = document.getElementById('engagement-chart');
 
 new Chart(engagementChart, {
 type: engagementChartType,
@@ -101,7 +104,53 @@ data: {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
     datasets: [{
     label: 'Engagement',
-    data: [15684, 8684, 5468, 3896, 6577, 12684, 14486],
+    data: [12909, 6008, 4898, 3190, 6108, 11897, 14123],
+    borderWidth: 3
+    }]
+},
+options: {
+    maintainAspectRatio: false,
+    scales: {
+    y: {
+        beginAtZero: true
+    }
+    }
+}
+});
+
+//--Viewership Retention Rate Chart
+const retentionChart = document.getElementById('retention-chart');
+
+new Chart(retentionChart, {
+type: retentionChartType,
+data: {
+    labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
+    datasets: [{
+    label: 'Viewership Retention Rate',
+    data: [78, 68, 62, 60, 68, 79, 86],
+    borderWidth: 3
+    }]
+},
+options: {
+    maintainAspectRatio: false,
+    scales: {
+    y: {
+        beginAtZero: true
+    }
+    }
+}
+});
+
+//--Total Monetization Chart
+const monetizationChart = document.getElementById('monetization-chart');
+
+new Chart(monetizationChart, {
+type: monetizationChartType,
+data: {
+    labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
+    datasets: [{
+    label: 'Total Monetization',
+    data: [2038, 1893, 1797, 1278, 1983, 2031, 2389],
     borderWidth: 3
     }]
 },

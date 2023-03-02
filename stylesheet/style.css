@@ -348,7 +348,7 @@ html{
     top: -130px;
 }
 
-#facebook-section .chart-type{
+#facebook-section .chart-type-btn{
     position: relative;
     background-color: #47A8DE;
     font-family: 'Roboto', serif;
@@ -357,10 +357,11 @@ html{
     width: 85px;
 }
 
-#facebook-section .chart-type:hover{
+#facebook-section .chart-type-btn:hover{
     background-color: #003cff;
 }
 
+/*
 .chart-container{
     position: relative;
     top: 40px;
@@ -376,7 +377,7 @@ html{
     width: 35%;
     height: 50%;
 }
-
+*/
 
 
 

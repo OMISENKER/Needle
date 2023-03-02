@@ -12,10 +12,10 @@
 </head>
 <body id="Dashboard-ui">
 
-    
-
+<!--Button for Side Navigation Bar-->
     <i class="fa fa-bars" id="navbar-btn" onclick="showNavBar()"></i>
 
+<!--Side Navigation Bar-->
     <div id="nav-sidebar">
         <img src="resources/Needle-logo.png" class="needle-logo sidebar-links" alt="">
         <a href="" class="sidebar-links sidebar-main-links">Profile</a>
@@ -30,20 +30,37 @@
         <a href="" class="sidebar-links sidebar-bottom-links">About</a>
     </div>
 
+<!--Dashboard Main Body-->
     <div id="dashboard-body">
         <h1>Dashboard</h1>
         <hr>
+<!--Dashboard Facebook Section-->
         <section id="facebook-section">
+        <!--Reach Chart-->
             <h1>Reach</h1>
-            <button class="chart-type" id="change-chart-type-btn-1" onclick="changeReachBarType()">bar chart</button>
+            <button class="chart-type-btn" id="change-chart-type-btn-1" onclick="changeReachBarType()">bar chart</button>
             <div class="chart-container">
-                <canvas id="myChart"></canvas>
+                <canvas id="reach-chart"></canvas>
             </div>
+        <!--Engagement Chart-->
             <h1>Engagement</h1>
-            <button class="chart-type" id="change-chart-type-btn-2" onclick="changeEngagementBarType()">bar chart</button>
+            <button class="chart-type-btn" id="change-chart-type-btn-2" onclick="changeEngagementBarType()">bar chart</button>
             <div class="chart-container-2">
-                <canvas id="mySecondChart"></canvas>
+                <canvas id="engagement-chart"></canvas>
             </div>
+        <!--Viewership Retention Rate Chart-->
+            <h1>Viewership Retention Rate:</h1>
+            <button class="chart-type-btn" id="change-chart-type-btn-3" onclick="changeRetentionBarType()">bar chart</button>
+            <div class="chart-container-3">
+                <canvas id="retention-chart"></canvas>
+            </div>
+        <!--Total Monetization Chart-->
+            <h1>Total Monetization:</h1>
+            <button class="chart-type-btn" id="change-chart-type-btn-4" onclick="changeMonetizationBarType()">bar chart</button>
+            <div class="chart-container-4">
+                <canvas id="monetization-chart"></canvas>
+            </div>
+
         </section>
     </div>
 
