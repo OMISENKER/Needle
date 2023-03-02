@@ -62,10 +62,19 @@ function showNavBar(){
 
 //chart
 
-const ctx = document.getElementById('myChart');
+//variables for control
+let reachChartType = 'pie';
+let engagementChartType = 'bar';
 
-new Chart(ctx, {
-type: 'bar',
+//function to change bar type
+//changeReachBarType(){
+  //  const reachChart
+//}
+
+const reachChart = document.getElementById('myChart');
+
+new Chart(reachChart, {
+type: reachChartType,
 data: {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
     datasets: [{
@@ -84,10 +93,10 @@ options: {
 }
 });
 
-const ctx2 = document.getElementById('mySecondChart');
+const engagementChart = document.getElementById('mySecondChart');
 
-new Chart(ctx2, {
-type: 'bar',
+new Chart(engagementChart, {
+type: engagementChartType,
 data: {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
     datasets: [{

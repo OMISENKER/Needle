@@ -343,6 +343,24 @@ html{
     transition: all .5s ease;
 }
 
+#facebook-section h1{
+    position: relative;
+    top: -130px;
+}
+
+#facebook-section .chart-type{
+    position: relative;
+    background-color: #47A8DE;
+    font-family: 'Roboto', serif;
+    border: none;
+    height: 40px;
+    width: 85px;
+}
+
+#facebook-section .chart-type:hover{
+    background-color: #003cff;
+}
+
 .chart-container{
     position: relative;
     top: 40px;
