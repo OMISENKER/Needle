@@ -332,24 +332,87 @@ html{
 }
 
 #facebook-section{
-    position: relative;
-    display: flex;
+    position: absolute;
+    display: grid;
+    grid-template-areas: 
+        "heading1 btn1 heading2 btn 2"
+        "chart1 chart1 chart2 chart2"
+        "heading3 btn3 heading4 btn4"
+        "chart3 chart3 chart4 chart4";
+    gap: 5px;
+    align-items: center;
+
     background-color: #FFFFFF;
     top: 1%;
     left: 5%;
     height: 80%;
     width: 90%;
-    align-items: center;
     transition: all .5s ease;
+}
+
+/*Grid positioning*/
+
+.heading1{ 
+    grid-area: heading1;
+}
+
+.heading2{ 
+    grid-area: heading2;   
+}
+
+.heading3{ 
+    grid-area: heading3;    
+}
+
+.heading4{ 
+    grid-area: heading4;    
+}
+
+#change-chart-type-btn-1{
+    grid-area: btn1;
+}
+
+#change-chart-type-btn-2{
+    grid-area: btn2;   
+}
+
+#change-chart-type-btn-3{
+    grid-area: btn3;
+}
+
+#change-chart-type-btn-4{
+    grid-area: btn4;
+}
+
+.reach-chart{
+    grid-area: chart1;
+}
+
+.engagement-chart{
+    grid-area: chart2;
+}
+
+.retention-chart{
+    grid-area: chart3;
+}
+
+.monetization-chart{
+    grid-area: chart4;
+}
+
+.chart-container-1, .chart-container-2, .chart-container-3, .chart-container-4{
+    width: 300px;
+    height: 150px;
 }
 
 #facebook-section h1{
     position: relative;
+    font-size: 1rem;
     top: -130px;
 }
 
-#facebook-section .chart-type-btn{
-    position: relative;
+.chart-type-btn{
+    /*position: relative;*/
     background-color: #47A8DE;
     font-family: 'Roboto', serif;
     border: none;
@@ -361,23 +424,7 @@ html{
     background-color: #003cff;
 }
 
-/*
-.chart-container{
-    position: relative;
-    top: 40px;
-    left: 40px;
-    width: 35%;
-    height: 50%;
-}
 
-.chart-container-2{
-    position: relative;
-    top: 40px;
-    left: 40px;
-    width: 35%;
-    height: 50%;
-}
-*/
 
 
 

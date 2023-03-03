@@ -66,7 +66,7 @@ function showNavBar(){
 let reachChartType = 'pie';
 let engagementChartType = 'bar';
 let retentionChartType = 'line';
-let monetizationChartType = 'donut';
+let monetizationChartType = 'doughnut';
 
 //function to change chart type
 
